@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import Definition from "./Definition";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
@@ -6,9 +7,15 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
 
+  function handleResponse(response) {
+    console.log(response);
+  }
+
   function search(event) {
     event.preventDefault();
-    alert("searching..");
+
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   function handleKeywordChange(event) {
@@ -18,14 +25,14 @@ export default function Dictionary() {
   return (
     <div className="dictionary">
       <div className="header">
-        <div class="row">
-          <div class="col-sm-4 col-12">
+        <div className="row">
+          <div className="col-sm-4 col-12">
             <div className="logo">
               <div>Dictio</div>
               <div>nary</div>
             </div>
           </div>
-          <div class="col-sm-8 col-12">
+          <div className="col-sm-8 col-12">
             <div className="search">
               <form onSubmit={search}>
                 <div className="input-group">
