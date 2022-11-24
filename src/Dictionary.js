@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Definition from "./Definition";
+import Results from "./Results";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
+  let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response);
+    setResults(response.data[0]);
   }
 
   function search(event) {
@@ -23,7 +24,7 @@ export default function Dictionary() {
   }
 
   return (
-    <div className="dictionary">
+    <div className="Dictionary">
       <div className="header">
         <div className="row">
           <div className="col-sm-4 col-12">
@@ -53,7 +54,7 @@ export default function Dictionary() {
           </div>
         </div>
       </div>
-      <Definition />
+      <Results results={results} />
     </div>
   );
 }
