@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Definition from "./Definition";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Dictionary() {
+  let [keyword, setKeyword] = useState("");
+
+  function search(event) {
+    event.preventDefault();
+    alert("searching..");
+  }
+
+  function handleKeywordChange(event) {
+    setKeyword(event.target.value);
+  }
+
   return (
     <div className="dictionary">
       <div className="header">
@@ -16,7 +27,7 @@ export default function Dictionary() {
           </div>
           <div class="col-sm-8 col-12">
             <div className="search">
-              <form>
+              <form onSubmit={search}>
                 <div className="input-group">
                   <input
                     type="search"
@@ -24,6 +35,7 @@ export default function Dictionary() {
                     placeholder="what word are you looking for?"
                     autoComplete="off"
                     autoFocus="on"
+                    onChange={handleKeywordChange}
                   />
                   <button className="btn">
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
