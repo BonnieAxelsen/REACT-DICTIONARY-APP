@@ -1,5 +1,7 @@
 import React from "react";
 import Definition from "./Definition";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Dictionary() {
   return (
@@ -23,7 +25,9 @@ export default function Dictionary() {
                     autoComplete="off"
                     autoFocus="on"
                   />
-                  <button className="btn"></button>
+                  <button className="btn">
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                  </button>
                 </div>
               </form>
             </div>
