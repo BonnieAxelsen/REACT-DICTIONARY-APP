@@ -48,7 +48,7 @@ a {
   }
 
   h1 {
-    font-size: calc(5rem + 5vw);
+    font-size: calc(4.75rem + 4.75vw);
     inline-size: 85%;
   }
 }
