@@ -1,0 +1,31 @@
+header {
+  margin-bottom: 8vh;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.input-group {
+  border-bottom: 1px solid var(--info-color);
+}
+
+.form-control {
+  font-family: var(--default-font-family);
+  font-size: 0.8rem;
+  border-radius: 0px;
+  border: none;
+  color: var(--secondary-color);
+}
+
+.form-control:focus {
+  border-color: var(--info-color);
+  box-shadow: none;
+  color: var(--secondary-color);
+}
+
+.svg-inline--fa {
+  color: var(--info-color);
+  font-size: 0.8rem;
+}
