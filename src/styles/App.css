@@ -48,7 +48,6 @@ a {
   }
 
   h1 {
-    font-size: calc(4.75rem + 4.75vw);
-    inline-size: 85%;
+    inline-size: 72%;
   }
 }
