@@ -26,6 +26,7 @@ h1 {
   line-height: 0.75em;
   margin-bottom: 0.5em;
   overflow-wrap: break-word;
+  width: 80%;
 }
 
 h2 {
@@ -66,6 +67,7 @@ hr {
   }
 
   h1 {
-    font-size: calc(6em + 6vw);
+    font-size: calc(5.5em + 5.5vw);
+    width: 100%;
   }
 }
