@@ -1,5 +1,5 @@
 header {
-  margin-bottom: 8vh;
+  margin-bottom: 5vh;
 }
 
 .row {
@@ -8,7 +8,7 @@ header {
 }
 
 .input-group {
-  border-bottom: 1px solid var(--info-color);
+  border-bottom: 1px solid rgba(78, 74, 74, 0.25);
 }
 
 .form-control {
@@ -28,4 +28,9 @@ header {
 .svg-inline--fa {
   color: var(--info-color);
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 576px) {
+  .heading {
+  }
 }

@@ -10,12 +10,17 @@
   margin: 0;
 }
 
-.Phonetic a {
-  font-weight: normal;
-  margin-right: 15px;
-  font-size: 14px;
-  padding: 8px 18px;
+.Listen {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
   border: 1px solid #dddddd;
-  border-radius: 50px;
-  text-decoration: none;
+  border-radius: 3rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.listen-icon:hover {
+  color: var(--primary-color);
 }

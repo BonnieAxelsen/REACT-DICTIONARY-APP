@@ -20,26 +20,44 @@ h5 {
 
 h1 {
   font-family: var(--heading-font-family);
-  font-size: calc(4rem + 4vw);
+  font-size: calc(4em + 4vw);
   font-weight: lighter;
   color: var(--primary-color);
   line-height: 0.75em;
   margin-bottom: 0.5em;
   overflow-wrap: break-word;
-  inline-size: 85%;
 }
 
 h2 {
   font-family: var(--heading-font-family);
-  font-size: 2.5rem;
+  font-size: 2.5em;
   color: var(--info-color);
 }
 
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-variant-caps: all-small-caps;
+}
 p,
 a {
   font-family: var(--default-font-family);
-  font-size: 15px;
+  font-size: 0.5em;
+  font-weight: lighter;
   color: var(--info-color);
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid rgba(78, 74, 74, 0.25);
+  opacity: 1;
+  color: var(--secondary-color);
 }
 
 @media screen and (max-width: 576px) {
@@ -48,5 +66,6 @@ a {
   }
 
   h1 {
+    font-size: calc(6em + 6vw);
   }
 }

@@ -38,10 +38,10 @@ export default function Dictionary(props) {
       <div className="Dictionary">
         <header>
           <div className="row">
-            <div className="col-sm-5 col-12">
+            <div className="col-sm-5 col-12 heading">
               <h1>dictionary</h1>
             </div>
-            <div className="col-sm-7 col-12">
+            <div className="col-sm-7 col-12 search-bar">
               <div className="search">
                 <form onSubmit={handleSubmit}>
                   <div className="input-group">
