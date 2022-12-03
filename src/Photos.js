@@ -24,6 +24,7 @@ export default function Photos(props) {
             );
           })}
         </div>
+        <hr />
       </div>
     );
   } else {
