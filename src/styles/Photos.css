@@ -1,0 +1,12 @@
+.Photos {
+  margin: 4vh 6vw;
+}
+
+.img-fluid {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .img-fluid {
+  }
+}

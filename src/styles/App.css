@@ -63,11 +63,11 @@ hr {
 
 @media screen and (max-width: 576px) {
   body {
-    margin: 6vh 7vw;
+    margin: 7.5vh 7vw;
   }
 
   h1 {
-    font-size: calc(5em + 5vw);
+    font-size: calc(5.75em + 5.75vw);
     width: 100%;
   }
 }
