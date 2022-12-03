@@ -14,12 +14,11 @@ export default function Results(props) {
           {props.definition.phonetics.map(function (phonetic, index) {
             return (
               <div key={index}>
-                <h4>
-                  <Phonetic phonetic={phonetic} />
-                </h4>
+                <Phonetic phonetic={phonetic} />
               </div>
             );
           })}
+          <hr />
         </section>
 
         {props.definition.meanings.map(function (meaning, index) {

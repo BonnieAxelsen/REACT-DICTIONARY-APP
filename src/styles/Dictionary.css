@@ -29,8 +29,3 @@ header {
   color: var(--info-color);
   font-size: 0.8rem;
 }
-
-@media screen and (max-width: 576px) {
-  .heading {
-  }
-}

@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container-fluid">
-        <Dictionary defaultKeyword="sunset" />
+        <Dictionary defaultKeyword="home" />
         <Footer />
       </div>
     </div>
