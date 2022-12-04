@@ -49,7 +49,7 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <header>
-          <div className="row">
+          <div className="row search-row">
             <div className="col-sm-5 col-12 heading">
               <h1>dictionary</h1>
             </div>
@@ -66,7 +66,10 @@ export default function Dictionary(props) {
                       onChange={handleKeywordChange}
                     />
                     <button className="btn">
-                      <FontAwesomeIcon icon={faMagnifyingGlass} />
+                      <FontAwesomeIcon
+                        icon={faMagnifyingGlass}
+                        className="search-icon"
+                      />
                     </button>
                   </div>
                 </form>

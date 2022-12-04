@@ -5,7 +5,6 @@ export default function Footer() {
   return (
     <footer>
       <p>
-        {" "}
         Coded and designed by <br />
         <a
           href="https://github.com/BonnieAxelsen/REACT-DICTIONARY-APP"

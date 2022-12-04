@@ -2,7 +2,7 @@ header {
   margin-bottom: 5vh;
 }
 
-.row {
+.search-row {
   display: flex;
   align-items: center;
 }
@@ -25,7 +25,12 @@ header {
   color: var(--secondary-color);
 }
 
-.svg-inline--fa {
+.search-icon {
   color: var(--info-color);
+  font-size: 0.8rem;
+}
+
+.search-icon:hover {
+  color: var(--primary-color);
   font-size: 0.8rem;
 }

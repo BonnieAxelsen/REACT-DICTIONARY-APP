@@ -1,5 +1,6 @@
 footer p {
   text-align: center;
+  font-variant-caps: all-small-caps;
 }
 
 footer a:hover {

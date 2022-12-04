@@ -46,6 +46,7 @@ h4 {
 h5 {
   font-variant-caps: all-small-caps;
 }
+
 p,
 a {
   font-family: var(--default-font-family);
@@ -67,7 +68,7 @@ hr {
   }
 
   h1 {
-    font-size: calc(5.75em + 5.75vw);
+    font-size: calc(5.65em + 5.65vw);
     width: 100%;
   }
 }
